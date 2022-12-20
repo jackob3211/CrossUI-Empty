@@ -19,7 +19,45 @@ xui.Class('App', 'xui.Module',{
         iniComponents : function(){
             // [[Code created by CrossUI RAD Studio
             var host=this, children=[], append=function(child){children.push(child.get(0));};
-
+            
+            append(
+                xui.create("xui.UI.Image")
+                .setHost(host,"xui_ui_image5")
+                .setLeft("9.142857142857142em")
+                .setTop("11.428571428571429em")
+                .setSrc("{xui.ini.img_pic}")
+            );
+            
+            append(
+                xui.create("xui.UI.Button")
+                .setHost(host,"xui_ui_button3")
+                .setRotate(180)
+                .setLeft("9.142857142857142em")
+                .setTop("19.80952380952381em")
+                .setCaption("Button")
+            );
+            
+            append(
+                xui.create("xui.UI.Button")
+                .setHost(host,"xui_ui_button4")
+                .setLeft("22.095238095238095em")
+                .setTop("18.285714285714285em")
+                .setCaption("Dropable Button")
+                .setType("drop")
+            );
+            
+            append(
+                xui.create("xui.UI.Input")
+                .setHost(host,"xui_ui_input5")
+                .setLeft("4.571428571428571em")
+                .setTop("28.19047619047619em")
+                .setWidth("18em")
+                .setHeight("10em")
+                .setLabelSize("8em")
+                .setLabelCaption("write shit")
+                .setMultiLines(true)
+            );
+            
             return children;
             // ]]Code created by CrossUI RAD Studio
         },
